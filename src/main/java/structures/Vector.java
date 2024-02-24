@@ -10,7 +10,7 @@ public class Vector {
     for (int i = 0; i < this.students.length; i++) {
       if (this.students[i] == null) {
           this.students[i] = student;
-          studentsTotal++;
+          this.studentsTotal++;
           break;
       }
     }
@@ -22,7 +22,7 @@ public class Vector {
 
   public String toString() {
     if (!isEmpty()) {
-        this.builderStringRepresentation();
+      return builderStringRepresentation();
     }
     return "[]";
   }
