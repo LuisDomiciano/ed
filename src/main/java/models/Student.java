@@ -3,7 +3,14 @@ public class Student {
   
   String name;
 
-  public Student() {}
+  public Student() {
+    super();
+  }
+
+  public Student(String name) {
+    super();
+    this.name = name;
+  }
 
   public String getName() {
     return this.name;
