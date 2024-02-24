@@ -23,4 +23,15 @@ public class VectorTest {
         var current = vector.toString();
         assertEquals(expected, current);
     }
+
+    @Test
+    public void testToStringNonEmpty() {
+        var vector = new Vector();
+        vector.add(new Student("Carlos"));
+        vector.add(new Student("Pedro"));
+        vector.add(new Student("Robson"));
+        String expected = "[Carlos, Pedro, Robson]";
+        var current = vector.toString();
+        assertEquals(expected, current);
+    }
 }
